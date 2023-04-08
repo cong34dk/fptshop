@@ -1,0 +1,87 @@
+/* main-content */
+.main-content {
+    display: inline-block;
+    width: 1290px;
+    height: 600px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+  /* end main-content */
+
+/* main-content__title */
+.main-content__title i {
+    font-size: 30px;
+  }
+  .main-content__title h2 {
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  /* end main-content__title */
+
+.frame-content{
+    width: 100%;
+    height: 92%;
+    /* background-color: blueviolet; */
+    margin-top: 25px;
+    border: 1px solid #000;
+}
+
+.content-left{
+    width: 50%;
+    height: 40%;
+    /* background-color: blue; */
+    float: left;
+}
+.content-right{
+    width: 50%;
+    height: 40%;
+    /* background-color: blue; */
+    float: right;
+}
+
+.frame-content input,select{
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.frame-content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.input-wrapper{
+    width: 100%;
+    height: 60%;
+    /* background-color: blanchedalmond; */
+}
+
+/* description-wrapper */
+
+.description-wrapper{
+    width: 100%;
+    height: 40%;
+    display: block  ;
+    /* background-color: cornflowerblue; */
+}
+.description-wrapper b{
+    display: block;
+}
+.input-description{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+.save-btn{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: forestgreen;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}

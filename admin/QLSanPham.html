@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sản Phẩm</title>
+    <link rel="stylesheet" href="../admin/css/cssChung.css">
+    <link rel="stylesheet" href="../admin/css/QLSanPham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="./admin.html" class="header-logo">ADMIN</a>
+        <i class="fa-solid fa-power-off"></i> <a href="../dangnhap.html">Đăng xuất</a>
+        <p class="header-title">HỆ THỐNG QUẢN TRỊ NỘI DUNG</p>
+    </div>
+    <hr class="hr1">
+    <hr class="hr2">
+    <!-- end header -->
+    <div class="content-container">
+        <div class="sidebar-menu">
+            <div class="sidebar">
+                <ul class="menu">
+                    <li><a class="main-menu" href="#">Trang chủ</a></li>
+
+                    <li>
+                        <a class="main-menu" href="#">Bán hàng <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="./QLSanPham.html">Danh sách sản phẩm</a></li>
+                            <li><a href="#">Khách hàng</a></li>
+                            <li><a href="#">Hóa đơn bán</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="main-menu" href="#">Nhập hàng <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="./QLNhapHang.html">Hóa đơn nhập</a></li>
+                            <li><a href="#">Hãng sản xuất</a></li>
+                            <li><a href="#">Nhà cung cấp</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="main-menu" href="#">Danh mục<i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Slide show</a></li>
+                            <li><a href="#">Quảng cáo</a></li>
+                            <li><a href="#">Người dùng</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a class="main-menu" href="#">Tài khoản</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- end sidebar-menu -->
+        <div class="main-content">
+            <div class="main-content__title">
+                <i class="fa-solid fa-circle-right"></i>
+                <h2>Quản lý sản phẩm</h2>
+            </div>
+
+            <div class="control-btn">
+                <button class="add-btn">Thêm mới</button>
+                <button class="deleteAll-btn">Xóa tất cả</button>
+
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr class="table-title">
+                        <th>STT</th>
+                        <th>Mã sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá tiền</th>
+                        <th>Ngày đăng</th>
+                        <th>Sửa</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>DT01</td>
+                        <td>Điện thoại Samsung Galaxy S23 Ultra 5G 256GB</td>
+                        <td class="price-cell">24.990.000 <u>đ</u></td>
+                        <td>02/04/2023</td>
+                        <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>DT02</td>
+                        <td>Điện thoại Xiaomi Redmi 10A 3GB-64GB</td>
+                        <td class="price-cell">2.790.000 <u>đ</u></td>
+                        <td>02/04/2023</td>
+                        <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>DT03</td>
+                        <td>Điện thoại iPhone 11 64GB</td>
+                        <td class="price-cell">10.490.000 <u>đ</u></td>
+                        <td>02/04/2023</td>
+                        <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>DT04</td>
+                        <td>Điện thoại OPPO A77s 8GB-128GB</td>
+                        <td class="price-cell">6.290.000 <u>đ</u></td>
+                        <td>02/04/2023</td>
+                        <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>DT05</td>
+                        <td>Điện thoại Xiaomi Redmi Note 11 Pro 8GB - 128GB</td>
+                        <td class="price-cell">5.990.000 <u>đ</u></td>
+                        <td>02/04/2023</td>
+                        <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>DT06</td>
+                        <td>Điện thoại Samsung Galaxy S22 5G 128GB</td>
+                        <td class="price-cell">14.990.000 <u>đ</u></td>
+                        <td>02/04/2023</td>
+                        <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>DT07</td>
+                        <td>Điện thoại OPPO Reno8 T 5G 128GB</td>
+                        <td class="price-cell">8.490.000 <u>đ</u></td>
+                        <td>02/04/2023</td>
+                        <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>DT08</td>
+                        <td>Điện thoại iPhone 12 64GB</td>
+                        <td class="price-cell">14.999.000 <u>đ</u></td>
+                        <td>02/04/2023</td>
+                        <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>DT09</td>
+                        <td>Điện thoại Samsung Galaxy A34 5G 128GB</td>
+                        <td class="price-cell">6.990.000 <u>đ</u></td>
+                        <td>02/04/2023</td>
+                        <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>DT10</td>
+                        <td>Điện thoại Realme C55 6GB-128GB</td>
+                        <td class="price-cell">4.690.000 <u>đ</u></td>
+                        <td>02/04/2023</td>
+                        <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+            <!-- end table -->
+        </div>
+        <!-- main-content -->
+    </div>
+    <!-- end content-container -->
+
+    <script>
+        $(document).ready(function () {
+            // Ẩn tất cả các submenu khi tải trang
+            $(".submenu").hide();
+
+            // Hiển thị submenu khi click vào menu item chứa submenu
+            $(".menu > li").click(function () {
+                // Ẩn tất cả các submenu khác
+                $(".submenu").not($(this).children(".submenu")).slideUp();
+
+                // Hiển thị hoặc ẩn submenu của menu item hiện tại
+                $(this).children(".submenu").stop(true, true).slideDown();
+            });
+        });
+
+    </script>
+
+    <script>
+        // Thao tác DOM (Document Object Model)
+        // Lấy tất cả các nút xóa
+        var deleteButtons = document.querySelectorAll('.delete-btn');
+
+        // Lặp qua từng nút xóa và thêm sự kiện "click"
+        deleteButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                // Hiển thị hộp thoại xác nhận
+                if (confirm('Bạn có chắc muốn xóa không?')) {
+                    // Xóa hàng trong bảng
+                    var row = button.parentNode.parentNode;
+                    row.parentNode.removeChild(row);
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        // Xóa tất cả các hàng trong bảng khi bấm button "Xóa tất cả"
+        const deleteAllBtn = document.querySelector('.deleteAll-btn');
+        const tableBody = document.querySelector('tbody');
+
+        deleteAllBtn.addEventListener('click', () => {
+            if (confirm('Bạn có chắc muốn xóa tất cả không?')) {
+                // Xóa tất cả các hàng trong bảng
+                while (tableBody.firstChild) {
+                    tableBody.removeChild(tableBody.firstChild);
+                }
+            }
+        });
+
+    </script>
+
+    <script>
+        // Làm cách lấy ô tiền ở cột giá tiền để sửa (sẽ làm sau)
+
+        //Code sửa giá tiền từ admin khi click button sửa
+
+        // đợi cho tài liệu HTML được tải hoàn tất trước khi thực thi đoạn mã bên trong.
+        $(document).ready(function () {
+
+            // Sử dụng phương thức on() để bắt sự kiện "click" của các phần tử có class "edit-btn".
+            $(".edit-btn").on("click", function () {
+
+                // Lấy phần tử HTML gần nhất của thẻ tr chứa phần tử được nhấn.
+                var currentRow = $(this).closest("tr");
+                var currentPrice = currentRow.find(".price-cell").text();
+
+                var newPrice = prompt("Nhập giá tiền mới:", currentPrice);
+                if (newPrice != null) {
+                    // Chuyển đổi số thành chuỗi có định dạng tiền tệ Việt Nam
+                    // var newPriceFormatted = parseFloat(newPrice).toLocaleString('vi-VN');
+
+                    // Thêm ký tự "đ" và gạch chân đằng sau
+                    var newPriceShow = newPrice + ' <u>đ</u>';
+                    currentRow.find(".price-cell").html(newPriceShow);
+                    alert("Sửa thành công");
+                }
+            });
+        });
+
+
+    </script>
+
+    <script>
+        // Code cho button thêm mới 1 hàng
+
+        var stringHtml = "</td><td><input type='text' class='product-id'></td><td><input type='text' class='product-name'></td><td><input type='text' class='product-price'></td><td>02/04/2023</td><td><button class='edit-btn'><i class='fa-solid fa-pen-to-square'></i></button></td><td><button class='delete-btn'><i class='fa-solid fa-trash'></i></button></td></tr>";
+        // Code thêm một hàng mới khi click button thêm
+        $(document).ready(function () {
+            $(".add-btn").on("click", function () {
+                // Lấy số lượng hàng trong bảng
+                var rowCount = $("table tr").length;
+                // Tạo một hàng mới với các cột tương ứng
+                var newRow = $("<tr><td>" + rowCount + stringHtml);
+                // Thêm hàng mới vào bảng
+                $("table").append(newRow);
+
+                // Thêm sự kiện click cho nút xóa mới được thêm vào
+                $(".delete-btn").on("click", function () {
+                    $(this).closest("tr").remove();
+
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

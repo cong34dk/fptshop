@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="./assets/css/cssChung.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .form-login {
+            width: 500px;
+            height: 450px;
+            background-color: #fff;
+            color: #000;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-top: 20px;
+
+        }
+
+        .form-title {
+            width: 100%;
+            height: 50px;
+            border-bottom: 2px solid #337ab7;
+
+        }
+
+        .form-title h1 {
+            line-height: 50px;
+            /* font-size: 18px; */
+            font-weight: bold;
+            margin-left: 15px;
+            text-align: center;
+        }
+
+        .form-login-wrapper {
+            margin-top: 20px;
+
+
+        }
+
+        .form-login-wrapper .span {
+            display: block;
+            margin-left: 15px;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        .input-css {
+            width: 90%;
+            height: 30px;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-left: 15px;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 18px;
+            height: 100%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: #43B14B;
+            color: #fff;
+            border: none;
+            outline: none;
+            font-size: 20px;
+
+
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        button span {
+            margin: 0 !important;
+        }
+
+        .showPw {
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+
+        .control {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .control .forgotPassword {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .control .signUp {
+            color: #000;
+        }
+
+        #reset-btn {
+            float: right;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+   <!-- header -->
+   <header class="header">
+    <div class="header-top">
+        <img src="./assets/img/header/clipse.svg" alt="Thông tin">
+        <p>
+            <strong>Tablet Samsung giá chỉ từ 3.690.000Đ</strong>
+        </p>
+        <a href="https://fptshop.com.vn/samsung/may-tinh-bang" class="header-top__btn" title="Mua ngay">Mua ngay</a>
+    </div>
+    <!-- end header-top -->
+    <!-- menu -->
+    <div class="menu">
+        <div class="center-wrapper">
+            <a href="index.html" class="menu-logo">
+                <img src="./assets/img/header/logo.png" alt="">
+            </a>
+            <form action="" class="form-search">
+                <input class="search-input" type="text" id="key" name=""
+                    placeholder="Nhập tên , máy tính, phụ kiện... cần tìm" autocomplete="off" maxlength="50">
+                <button type="submit" aria-label="Tìm kiếm" class="search-btn" title="Tìm kiếm"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <ul class="menu-right">
+                <li>
+                    <a href="#">
+                        <div class="icon-wrapper"><i class="fa-solid fa-file"></i></div>
+                        <span>Thông tin hay</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-wrapper"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <span>Thanh toán &amp; tiện ích</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./dangnhap.html" target="_parent">
+                        <div class="icon-wrapper"><i class="fa-solid fa-user"></i></div>
+                        <span>Tài khoản của tôi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./giohang.html">
+                        <div class="icon-wrapper"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <span>Giỏ hàng</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- end menu -->
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="center-wrapper">
+            <ul>
+                <li><a href="">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span> ĐIỆN THOẠI </span>
+                    </a></li>
+                <li><a href="">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <span> LAPTOP </span>
+                    </a></li>
+                <li><a href="">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-tablet"></i>
+                        </div>
+                        <span> MÁY TÍNH BẢNG </span>
+                    </a></li>
+                <li><a href="">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-apple"></i>
+                        </div>
+                        <span>APPLE </span>
+                    </a></li>
+                <li><a href="">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <span> PC- LINH KIỆN </span>
+                    </a></li>
+                <li><a href="">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <span> PHỤ KIỆN </span>
+                    </a></li>
+                <li><a href="">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </div>
+                        <span> MÁY CŨ GIÁ RẺ </span>
+                    </a></li>
+                <li><a href="">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <span>HÀNG GIA DỤNG </span>
+                    </a></li>
+                <li><a href="">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-sim-card"></i>
+                        </div>
+                        <span> SIM & THẺ </span>
+                    </a></li>
+                <li><a href="">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-tag"></i>
+                            <span> KHUYẾN MÃI </span>
+                    </a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- end navbar -->
+</header>
+<!-- end header -->
+
+    <div class="form-login">
+        <div class="form-title">
+            <h1>Thông tin tài khoản</h1>
+        </div>
+        <!-- end form-title -->
+        <div class="form-login-wrapper">
+            <span class="span">Họ và tên: </span>
+            <input class="input-css" id="txtFullName" type="text" placeholder="VD: Nguyễn Đình Công" required
+                oninput="checkFullName()"><br>
+            <span id="chkFullName" style="color: red; display: none;">*</span>
+
+            <span class="span">Số điện thoại: </span>
+            <input class="input-css" id="txtPhoneNumber" type="tel" placeholder="Nhập số điện thoại"
+                oninput="checkPhoneNumber()"> <br>
+            <span id="chkPhoneNumber" style="color: red; display: none;">*</span>
+
+            <span class="span">Email: </span>
+            <input type="email" class="input-css" id="txtEmail" placeholder="VD: email@domain.com"
+                oninput="checkEmail()"> <br>
+            <span id="chkEmail" style="color: red; display: none;">*</span>
+
+            <span class="span">Tài khoản: </span>
+            <input type="text" class="input-css" id="txtAccount" placeholder="Nhập tài khoản" oninput="checkAccount()">
+            <br>
+            <span id="chkAccount" style="color: red; display: none;">*</span>
+
+            <span class="span">Mật khẩu: </span>
+            <input class="input-css" id="txtPassword" type="password" placeholder="Nhập mật khẩu" required
+                oninput="checkPassword()"> <br>
+            <span id="chkPassword" style="color: red; display: none;">*</span> <br>
+
+            <input class="showPw" type="checkbox" name="" id="" onclick="showPassword()">Hiển thị mật khẩu
+            <input type="button" value="Reset" id="reset-btn" onclick="reset()">
+
+            <script>
+                function showPassword() {
+                    var x = document.getElementById("txtPassword");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    }
+                    else {
+                        x.type = "password"
+                    }
+                }
+            </script>
+            <div class="btn">
+                <button onclick="alert('Thành công')"><a href="">Đăng ký</a></button>
+            </div>
+            <div class="control">
+                <a href="" class="forgotPassword">Quên mật khẩu?</a>
+                <a href="./dangnhap.html" class="signUp">Đăng nhập</a>
+            </div>
+        </div>
+        <!--end form-login-wrapper -->
+    </div>
+
+    <script>
+        //a)Họ và tên không quá 50 ký tự, không chứa ký tự số
+        function checkFullName() {
+            var fullNameInput = document.getElementById("txtFullName");
+            var fullNameSpan = document.getElementById("chkFullName");
+
+            //Không được để trống
+            if (fullNameInput.value === "") {
+                fullNameSpan.style.display = "inline";
+                fullNameSpan.textContent = "* Không được để trống";
+                return false;
+            }
+            // Họ và tên không quá 50 ký tự, không chứa ký tự số
+            // Không có các chữ số từ 0 đến 9, và có độ dài từ 1 đến 50 ký tự.
+            var regex = /^[^\d]{1,50}$/;
+            if (!regex.test(fullNameInput.value)) {
+                fullNameSpan.innerHTML =
+                    "* Họ và tên không quá 50 ký tự và không chứa ký tự số";
+                fullNameSpan.style.display = "inline";
+                return false;
+            }
+            // Nếu hợp lệ thì ẩn cảnh báo
+            fullNameSpan.style.display = "none";
+            return true;
+        }
+
+        //b) Check Điện thoại 
+        function checkPhoneNumber() {
+            var phoneNumberInput = document.getElementById("txtPhoneNumber");
+            var phoneNumberSpan = document.getElementById("chkPhoneNumber");
+            if (phoneNumberInput.value === "") {
+                phoneNumberSpan.style.display = "inline";
+                phoneNumberSpan.textContent = "* Không được để trống";
+                return false
+            }
+            var regex = /^(0|\+84)[3|5|7|8|9]\d{8}$/;
+            if (!regex.test(phoneNumberInput.value)) {
+                phoneNumberSpan.style.display = "inline";
+                phoneNumberSpan.textContent = "* Số điện thoại không đúng định dạng";
+                return false;
+            }
+            phoneNumberSpan.style.display = "none";
+            return true;
+        }
+
+        // c)	Email phải chứa @ và dấu chấm
+        function checkEmail() {
+            var emailInput = document.getElementById("txtEmail");
+            var emailSpan = document.getElementById("chkEmail");
+            if (emailInput.value === "") {
+                emailSpan.style.display = "inline";
+                emailSpan.textContent = "* Không được để trống";
+                return false
+            }
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regex.test(emailInput.value)) {
+                emailSpan.style.display = "inline";
+                emailSpan.textContent = "* Email không đúng định dạng";
+                return false;
+            }
+            emailSpan.style.display = "none";
+            return true;
+        }
+
+        // d) Tài khoản phải chứa ít nhất 3 và tối đa 16 ký tự, không chứa kí tự đặc biệt
+        function checkAccount() {
+            var accountInput = document.getElementById("txtAccount");
+            var accountSpan = document.getElementById("chkAccount");
+            if (accountInput.value === "") {
+                accountSpan.style.display = "inline";
+                accountSpan.textContent = "* Không được để trống";
+                return false
+            }
+            var regex = /^[a-zA-Z0-9]{3,16}$/;
+            if (!regex.test(accountInput.value)) {
+                accountSpan.style.display = "inline";
+                accountSpan.textContent = "* Tài khoản phải chứa ít nhất 3 và tối đa 16 ký tự, không chứa kí tự đặc biệt ";
+                return false;
+            }
+            accountSpan.style.display = "none";
+            return true;
+        }
+        //e) Mật khẩu phải chứa ít nhất một chữ cái viết hoa, một chữ cái viết thường,
+        // một số và ít nhất 8 ký tự.
+
+        function checkPassword() {
+            var passwordInput = document.getElementById("txtPassword");
+            var passwordSpan = document.getElementById("chkPassword")
+            if (passwordInput.value === "") {
+                passwordSpan.style.display = "inline";
+                passwordSpan.textContent = "* Không được để trống"
+                return false
+            }
+
+            var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+            if (!regex.test(passwordInput.value)) {
+                passwordSpan.style.display = "inline";
+                passwordSpan.textContent = "* Mật khẩu phải chứa ít nhất 1 chữ hoa, 1 chữ thường, 1 số và ít nhất 8 ký tự"
+                return false
+
+            }
+            passwordSpan.style.display = "none";
+            return true;
+        }
+        //Reset btn
+        function reset() {
+            document.getElementById("txtFullName").value = "";
+            document.getElementById("txtPhoneNumber").value = "";
+            document.getElementById("txtEmail").value = "";
+            document.getElementById("txtAccount").value = "";
+            document.getElementById("txtPassword").value = "";
+
+        }
+
+
+    </script>
+</body>
+
+</html>

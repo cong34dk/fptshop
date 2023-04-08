@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Hàng</title>
+    <link rel="stylesheet" href="./assets/css/cssChung.css">
+    <link rel="stylesheet" href="./assets/css/giohang.css">
+    <link rel="stylesheet" href="./assets/css/dathang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-top">
+            <img src="./assets/img/header/clipse.svg" alt="Thông tin">
+            <p>
+                <strong>Tablet Samsung giá chỉ từ 3.690.000Đ</strong>
+            </p>
+            <a href="https://fptshop.com.vn/samsung/may-tinh-bang" class="header-top__btn" title="Mua ngay">Mua ngay</a>
+        </div>
+        <!-- end header-top -->
+        <!-- menu -->
+        <div class="menu">
+            <div class="center-wrapper">
+                <a href="index.html" class="menu-logo">
+                    <img src="./assets/img/header/logo.png" alt="">
+                </a>
+                <form action="" class="form-search">
+                    <input class="search-input" type="text" id="key" name=""
+                        placeholder="Nhập tên , máy tính, phụ kiện... cần tìm" autocomplete="off" maxlength="50">
+                    <button type="submit" aria-label="Tìm kiếm" class="search-btn" title="Tìm kiếm"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul class="menu-right">
+                    <li>
+                        <a href="#">
+                            <div class="icon-wrapper"><i class="fa-solid fa-file"></i></div>
+                            <span>Thông tin hay</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon-wrapper"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                            <span>Thanh toán &amp; tiện ích</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./dangnhap.html" target="_parent">
+                            <div class="icon-wrapper"><i class="fa-solid fa-user"></i></div>
+                            <span>Tài khoản của tôi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./giohang.html">
+                            <div class="icon-wrapper"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <span>Giỏ hàng</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- end menu -->
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="center-wrapper">
+                <ul>
+                    <li><a href="">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span> ĐIỆN THOẠI </span>
+                        </a></li>
+                    <li><a href="">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-laptop"></i>
+                            </div>
+                            <span> LAPTOP </span>
+                        </a></li>
+                    <li><a href="">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-tablet"></i>
+                            </div>
+                            <span> MÁY TÍNH BẢNG </span>
+                        </a></li>
+                    <li><a href="">
+                            <div class="icon-wrapper">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                            <span>APPLE </span>
+                        </a></li>
+                    <li><a href="">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                            <span> PC- LINH KIỆN </span>
+                        </a></li>
+                    <li><a href="">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-headphones"></i>
+                            </div>
+                            <span> PHỤ KIỆN </span>
+                        </a></li>
+                    <li><a href="">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </div>
+                            <span> MÁY CŨ GIÁ RẺ </span>
+                        </a></li>
+                    <li><a href="">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <span>HÀNG GIA DỤNG </span>
+                        </a></li>
+                    <li><a href="">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-sim-card"></i>
+                            </div>
+                            <span> SIM & THẺ </span>
+                        </a></li>
+                    <li><a href="">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-tag"></i>
+                                <span> KHUYẾN MÃI </span>
+                        </a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- end navbar -->
+    </header>
+    <!-- end header -->
+
+    <main class="main-wrapper center-wrapper">
+        <div class="cart__wrapper">
+            <div class="link-wrapper">
+                <p><a href="./index.html">Trang chủ</a> / Giỏ hàng</p>
+            </div>
+
+            <div class="card" id="card-none">
+                <div class="card-title" id="card-title"><b>Có 1 sản phẩm trong giỏ hàng</b></div>
+                <div class="card-body">
+                    <div class="card-body__product">
+                        <div class="product-cart">
+                            <div class="product-cart__img">
+                                <img src="./assets/img/iPhone14Pro/1.webp" alt="Demo">
+                            </div>
+                            <div class="product-cart__info">
+                                <div class="product-cart__inside">
+                                    <a href="" class="product-cart__line">
+                                        <h3 class="product-cart__name">iPhone 14 Pro 128GB</h3>
+                                    </a>
+                                    <div class="product-cart__line">
+                                        <div class="c-dropdown drop-color">
+                                            <div class="c-dropdown-button">
+                                                <select name="" id="" class="select-color">
+                                                    <option value="">Tím</option>
+                                                    <option value="" selected>Vàng</option>
+                                                    <option value="">Đen</option>
+                                                    <option value="">Bạc</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-cart__line">
+                                        <div class="c-dropdown drop-color">
+                                            <div class="c-dropdown-button">
+                                                <select name="" id="" class="select-sale">
+                                                    <option value="" selected> Giảm ngay 5.800.000đ khi mua màu Vàng
+                                                    </option>
+                                                    <option value="">Giảm ngay 2.800.000đ áp dụng đến 06/04</option>
+
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-promotion">
+                                        <li>Giảm đến 30% hệ sinh thái Apple</li>
+                                        <li>Tặng phiếu mua hàng 500.000đ mua đơn hàng Robot hút bụi/ máy lọc nước trên
+                                            5.000.000đ</li>
+                                        <li>Thu cũ đổi mới trợ giá ngay 15% đến 3 triệu (SmartExchange)</li>
+                                        <li>Sim MobiFone Super Data 1T giá chỉ 199.000đ </li>
+                                    </ul>
+
+                                </div>
+                                <!-- end product-cart__inside -->
+                                <div class="product-cart__quality">
+                                    <div class="product-cart__quality__wrap">
+                                        <button class="btn-minus btn-quality btn-disabled">
+                                            <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                                        </button>
+                                        <input type="text" class="show-quantity" value="1">
+                                        <button class="btn-plus btn-quality">
+                                            <span class="icon-plus"><i class="fa-solid fa-plus"></i></span>
+                                        </button>
+                                    </div>
+                                    <!--end product-cart__quality__wrap -->
+                                    <div class="product-cart__remove" onclick="remove()">
+                                        <span class="icon-trash"><i class="fa-solid fa-trash"></i></span>
+                                        Xóa
+                                    </div>
+                                </div>
+
+                                <div class="product-cart__price">
+                                    <span class="product-cart__price__show">25.190.000<p>đ</p> </span><br>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end card -->
+            <div class="cart-form">
+                <div class="cart-form__block">
+                    <div class="form-customer">
+                        <div class="cart-form__line">
+                            <div class="radio">
+                                <input type="radio" name="gender" id="radio-cart1">
+                                <label for="radio-cart1">Anh</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="gender" id="radio-cart1">
+                                <label for="radio-cart2">Chị</label>
+                            </div>
+                        </div>
+                        <div class="cart-form__line__input">
+                            <div class="box-row">
+                                <div class="box-fullName">
+                                    <input type="text" class="" id="txtFullName" placeholder="Nhập họ và tên" value=""
+                                        oninput="checkFullName()"><br>
+                                    <span id="chkFullName" style="color: red; display: none;">*</span>
+                                </div>
+
+                                <div class="box-phone">
+                                    <input type="text" class="" id="txtPhoneNumber" type="tel"
+                                        placeholder="Nhập số điện thoại" value="" oninput="checkPhoneNumber()"><br>
+                                    <span id="chkPhoneNumber" style="color: red; display: none;">*</span>
+                                </div>
+                                <br>
+                            </div>
+
+
+                            <div class="box-email">
+                                <input type="email" class="" id="txtEmail" placeholder="Nhập email" value="" required
+                                    oninput="checkEmail()"><br>
+                                <span id="chkEmail" style="color: red; display: none;">*</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end cart-form -->
+            <div class="cart-submit">
+                <button class="submit-btn" onclick="alert('Đặt hàng thành công')">HOÀN TẤT ĐẶT HÀNG</button>
+                <p>Bằng cách đặt hàng, quý khách đồng ý với <a href="#" class="re-link--gray">Điều khoản sử dụng</a> của
+                    FPT Shop</p>
+            </div>
+
+        </div>
+        <!-- end cart__wrapper -->
+    </main>
+
+
+    <script>
+        // Lấy các phần tử cần thiết
+        var minusButton = document.querySelector('.btn-minus');
+        var plusButton = document.querySelector('.btn-plus');
+        var quantityInput = document.querySelector('.show-quantity');
+        var priceSpan = document.querySelector('.product-cart__price__show');
+
+        // Thiết lập sự kiện click cho nút trừ
+        minusButton.addEventListener('click', function () {
+            var quantity = parseInt(quantityInput.value);
+
+            // Giảm số lượng nếu số lượng lớn hơn 1
+            if (quantity > 1) {
+                quantity -= 1;
+                quantityInput.value = quantity;
+            }
+
+            // Cập nhật giá
+            var price = 25190000 * quantity;
+            priceSpan.innerHTML = price.toLocaleString('vi-VN') + '<u>đ</u>';
+
+        });
+
+        // Thiết lập sự kiện click cho nút cộng
+        plusButton.addEventListener('click', function () {
+            var quantity = parseInt(quantityInput.value);
+
+            // Tăng số lượng
+            quantity += 1;
+            quantityInput.value = quantity;
+
+            // Cập nhật giá
+            var price = 25190000 * quantity;
+            priceSpan.innerHTML = price.toLocaleString('vi-VN') + '<u>đ</u>';
+
+        });
+
+
+        function remove() {
+            var remove = document.getElementById("card-none")
+            remove.style.display = "none";
+        }
+    </script>
+
+    <script>
+        //a)Họ và tên không quá 50 ký tự, không chứa ký tự số
+        function checkFullName() {
+            var fullNameInput = document.getElementById("txtFullName");
+            var fullNameSpan = document.getElementById("chkFullName");
+
+            //Không được để trống
+            if (fullNameInput.value === "") {
+                fullNameSpan.style.display = "inline";
+                fullNameSpan.textContent = "* Không được để trống";
+                return false;
+            }
+            // Họ và tên không quá 50 ký tự, không chứa ký tự số
+            // Không có các chữ số từ 0 đến 9, và có độ dài từ 1 đến 50 ký tự.
+            var regex = /^[^\d]{1,50}$/;
+            if (!regex.test(fullNameInput.value)) {
+                fullNameSpan.innerHTML =
+                    "* Họ và tên không quá 50 ký tự và không chứa ký tự số";
+                fullNameSpan.style.display = "inline";
+                return false;
+            }
+            // Nếu hợp lệ thì ẩn cảnh báo
+            fullNameSpan.style.display = "none";
+            return true;
+        }
+
+
+        //b) Check Điện thoại 
+        function checkPhoneNumber() {
+            var phoneNumberInput = document.getElementById("txtPhoneNumber");
+            var phoneNumberSpan = document.getElementById("chkPhoneNumber");
+            if (phoneNumberInput.value === "") {
+                phoneNumberSpan.style.display = "inline";
+                phoneNumberSpan.textContent = "* Không được để trống";
+                return false
+            }
+            var regex = /^(0|\+84)[3|5|7|8|9]\d{8}$/;
+            if (!regex.test(phoneNumberInput.value)) {
+                phoneNumberSpan.style.display = "inline";
+                phoneNumberSpan.textContent = "* Số điện thoại không đúng định dạng";
+                return false;
+            }
+            phoneNumberSpan.style.display = "none";
+            return true;
+        }
+
+        // c)	Email phải chứa @ và dấu chấm
+        function checkEmail() {
+            var emailInput = document.getElementById("txtEmail");
+            var emailSpan = document.getElementById("chkEmail");
+            if (emailInput.value === "") {
+                emailSpan.style.display = "inline";
+                emailSpan.textContent = "* Không được để trống";
+                return false
+            }
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regex.test(emailInput.value)) {
+                emailSpan.style.display = "inline";
+                emailSpan.textContent = "* Email không đúng định dạng";
+                return false;
+            }
+            emailSpan.style.display = "none";
+            return true;
+        }
+    </script>
+</body>
+
+</html>
